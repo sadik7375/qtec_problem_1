@@ -21,6 +21,7 @@
                         <div class="flex space-x-4">
                             @auth
                                 <a href="{{ url('/notes/create') }}" class="btn font-bold ">ADD NOTES</a>
+                                <a href="{{ route('logout') }} class="btn font-bold">Logout</a>
                             @else
                                 <a href="{{ route('login') }}" class="btn">Log in</a>
                                 @if (Route::has('register'))

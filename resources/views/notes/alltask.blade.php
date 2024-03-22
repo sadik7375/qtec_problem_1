@@ -47,6 +47,7 @@
                 <th>Title</th>
                 <th>Description</th>
                 <th>Status</th>
+                <th>Create Date</th>
                 <th>Actions</th>
             </tr>
             </thead>
@@ -55,7 +56,9 @@
                 <tr>
                     <td>{{ $note->title }}</td>
                     <td>{{ $note->description }}</td>
+
                     <td>{{ $note->status }}</td>
+                    <td>{{ $note->created_at }}</td>
                     <td style="display: flex; justify-content: space-between;">
                         <form action="{{ route('notes.delete', $note->id) }}" method="POST">
                             @csrf

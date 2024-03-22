@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Notes;
-
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Note;
@@ -14,7 +14,11 @@ class NoteController extends Controller
 
     public function index()
     {
-        $notes = Note::all();
+
+        $userId = Auth::id();
+
+        $notes = Note::where('created_by', $userId)->get();
+
         return view('notes.alltask', compact('notes'));
     }
 
@@ -50,7 +54,7 @@ class NoteController extends Controller
             'title' => $request->title,
             'description' => $request->description,
             'status'=>$request->status,
-            'created_by'=>"sadik"
+            'created_by'=>auth()->id()
         ];
 
 
@@ -92,12 +96,14 @@ class NoteController extends Controller
             'title' => 'required|string',
             'description' => 'required|string',
             'status' => 'nullable|string',
+
         ]);
 
         $note->update([
             'title' => $request->title,
             'description' => $request->description,
             'status' => $request->status,
+
         ]);
 
         return redirect()->route('notes.list')->with('success', 'Note updated successfully.');
