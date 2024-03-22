@@ -3,8 +3,8 @@
 
 ## My project features:
 1. User Authentication with registration and login
-2. Authenticate user only create, update, delete, search his notes
-3. For user friendly UI(bootstrap),user can user easily.
+2. Authenticate user only create, update, delete, search his notes app
+3. For user friendly UI(bootstrap),user can use easily.
    
 
 ## How to install my project:
@@ -13,7 +13,7 @@
 3rd: Import database in MySQL which was provided in the project file(notes.sql)
 4th: change the .env file name
 5th: Write in terminal php artisan serve
-6th: After registration and login,add notes easily
+6th: After registration and login, add notes easily
 
 
 
