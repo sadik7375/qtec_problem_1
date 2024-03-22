@@ -7,7 +7,7 @@
 3. For user friendly UI(bootstrap),user can use easily.
    
 
-## How to install my project:
+## How to install my project(Laravel version 11):
 1st: Clone my project from git repo 
 2nd: Open the terminal in the folder path and write the composer update
 3rd: Import database in MySQL which was provided in the project file(notes.sql)
