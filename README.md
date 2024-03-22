@@ -8,12 +8,12 @@
    
 
 ## How to install my project(Laravel version 11):
-1st: Clone my project from git repo 
-2nd: Open the terminal in the folder path and write the composer update
-3rd: Import database in MySQL which was provided in the project file(notes.sql)
-4th: change the .env file name
-5th: Write in terminal php artisan serve
-6th: After registration and login, add notes easily
+1. Clone my project from git repo 
+2. Open the terminal in the folder path and write the composer update
+3. Import database in MySQL which was provided in the project file(notes.sql)
+4. change the .env file name
+5. Write in terminal php artisan serve
+6. After registration and login, add notes easily
 
 
 
